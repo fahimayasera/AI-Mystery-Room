@@ -1,0 +1,33 @@
+.api-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 13px 0;
+  padding: 12px 14px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.api-error { justify-content: space-between; color: #e1b7b5; background: #281b1f; border: 1px solid #593137; }
+.api-error button { flex: 0 0 auto; padding: 4px 0; border: 0; color: #e6bf7f; background: transparent; font: 9px 'DM Mono', monospace; cursor: pointer; }
+.api-loading { justify-content: center; min-height: 190px; color: #c6b78f; background: #1C1E24; border: 1px solid #2d2e34; }
+.loading-spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid #c6a15b55; border-top-color: #C6A15B; border-radius: 50%; animation: mystery-spin .8s linear infinite; }
+.api-loading .loading-spinner { width: 18px; height: 18px; }
+@keyframes mystery-spin { to { transform: rotate(360deg); } }
+.clue-list { padding: 0 16px 15px; border-top: 1px solid #303137; }
+.clue-list-heading { display: flex; justify-content: space-between; align-items: center; padding: 13px 0 8px; color: #C6A15B; font: 8px 'DM Mono', monospace; letter-spacing: .8px; }
+.clue-list-heading small { color: #85858a; font-size: 7px; }
+.clue-row { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 12px 0; border-top: 1px solid #303137; }
+.clue-row strong { color: #e3ded4; font: 13px 'Playfair Display', serif; }
+.clue-row p, .no-clues { margin: 5px 0 0; color: #929196; font-size: 9px; line-height: 1.6; }
+.no-clues { padding: 10px 0; }
+.clue-row .discover-button { min-width: 102px; }
+.evidence-media { position: relative; z-index: 1; display: block; max-width: 90%; max-height: 210px; object-fit: contain; box-shadow: 0 8px 22px #0008; }
+.evidence-paper h3 { margin: 8px 0; color: #514639; font: 15px 'Playfair Display', serif; }
+.timeline-label { margin-top: 18px !important; }
+.event-list { margin: 0; padding: 0; list-style: none; }
+.event-list li { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px solid #35363b; color: #aaa8a2; font: 11px/1.7 'DM Sans', sans-serif; }
+.event-list li span { flex: 0 0 22px; padding-top: 3px; color: #C6A15B; font: 8px 'DM Mono', monospace; }
+@media (max-width: 680px) {
+  .clue-row { align-items: flex-start; flex-direction: column; }
+  .clue-row .discover-button { align-self: flex-start; }
+}
